@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mansoor Ahmad | Freelance Web Services</title>
 
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 * {
     box-sizing: border-box;
@@ -17,11 +20,17 @@ body {
     color: #333;
 }
 
-/* HEADER */
+/* HEADER / HERO SECTION */
 header {
-    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    background: linear-gradient(
+        rgba(30,60,114,0.8),
+        rgba(42,82,152,0.8)
+    ),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -34,8 +43,7 @@ header p {
     font-size: 18px;
 }
 
-/* BUTTON */
-.btn {
+header .btn {
     display: inline-block;
     margin-top: 20px;
     background: #25D366;
@@ -55,7 +63,7 @@ section {
     border-radius: 12px;
 }
 
-/* SERVICES */
+/* SERVICES & PORTFOLIO */
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +77,18 @@ section {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-box i {
+    font-size: 30px;
+    color: #2a5298;
+    margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -78,7 +98,7 @@ footer {
     color: #777;
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 600px) {
     header h1 {
         font-size: 28px;
@@ -89,46 +109,81 @@ footer {
 
 <body>
 
+<!-- HEADER / HERO -->
 <header>
     <h1>Mansoor Ahmad</h1>
-    <p>Freelance Website Developer & Data Entry Specialist</p>
+    <p>I help small businesses and individuals get professional websites & accurate data work — fast and affordable.</p>
     <a class="btn" href="https://wa.me/92XXXXXXXXXX">Hire Me on WhatsApp</a>
 </header>
 
+<!-- SERVICES -->
 <section>
     <h2>What I Do</h2>
     <div class="services">
         <div class="service-box">
-            <h3>Website Creation</h3>
-            <p>Modern, mobile-friendly websites using HTML, WordPress & AI.</p>
+            <h3><i class="fas fa-laptop-code"></i> Website Creation</h3>
+            <p>Clean, fast, mobile-friendly websites that help you look professional and win more clients.</p>
         </div>
         <div class="service-box">
-            <h3>Data Entry</h3>
-            <p>Accurate data entry, Excel, Google Sheets & web research.</p>
+            <h3><i class="fas fa-table"></i> Data Entry</h3>
+            <p>Accurate data entry, Excel & Google Sheets work with attention to detail and on-time delivery.</p>
         </div>
         <div class="service-box">
-            <h3>Website Fixes</h3>
-            <p>Bug fixing, speed improvement, layout & content updates.</p>
+            <h3><i class="fas fa-screwdriver-wrench"></i> Website Fixes</h3>
+            <p>Fix layout issues, improve speed, update content and make your website work smoothly.</p>
         </div>
     </div>
 </section>
 
+<!-- PORTFOLIO -->
 <section>
-    <h2>Why Clients Choose Me</h2>
+    <h2><i class="fas fa-briefcase"></i> Portfolio (Sample Work)</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Business Website</h3>
+            <p>Sample website for a small business. Includes homepage, services section, and contact details.<br><strong>Tools:</strong> HTML, CSS, AI</p>
+        </div>
+        <div class="service-box">
+            <h3>Personal Portfolio</h3>
+            <p>Clean personal portfolio website for a freelancer. Mobile-friendly and modern layout.<br><strong>Tools:</strong> HTML, CSS</p>
+        </div>
+        <div class="service-box">
+            <h3>Data Entry Sample</h3>
+            <p>Excel & Google Sheets data entry sample. Organized, accurate, and well-formatted data.<br><strong>Tools:</strong> Excel, Google Sheets</p>
+        </div>
+    </div>
+</section>
+
+<!-- WHO I WORK WITH -->
+<section>
+    <h2>Who I Work With</h2>
     <p>
-        ✔ Fast delivery<br>
-        ✔ Clear communication<br>
-        ✔ Affordable pricing<br>
-        ✔ 100% satisfaction
+        ✔ Small business owners<br>
+        ✔ Online sellers<br>
+        ✔ Freelancers & startups<br>
+        ✔ Anyone who needs a clean website or reliable data work
     </p>
 </section>
 
+<!-- WHY CHOOSE ME -->
 <section>
-    <h2>Contact</h2>
-    <p>Let’s work together. Message me directly on WhatsApp.</p>
-    <a class="btn" href="https://wa.me/00923028976688">Contact Now</a>
+    <h2>Why Clients Choose Me</h2>
+    <p>
+        ✔ Friendly and clear communication<br>
+        ✔ Fast turnaround time<br>
+        ✔ 100% focus on quality<br>
+        ✔ Affordable pricing for startups and small businesses
+    </p>
 </section>
 
+<!-- CONTACT -->
+<section>
+    <h2><i class="fas fa-phone"></i> Contact</h2>
+    <p>Have a project in mind or need quick help? Message me on WhatsApp and let’s discuss your requirements.</p>
+    <a class="btn" href="https://wa.me/+923028976688">Contact Now</a>
+</section>
+
+<!-- FOOTER -->
 <footer>
     © 2026 Mansoor Ahmad | Freelance Services
 </footer>
